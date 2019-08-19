@@ -1,0 +1,28 @@
+http://127.0.0.1:8000/api/v1/todo/all/           ----- list all TODOs
+
+http://127.0.0.1:8000/api/v1/todo/create/        ----- add TODO
+
+http://127.0.0.1:8000/api/v1/todo/id/[id]/       ----- update(PUT) , delete(DELETE) , select(GET)  (?format=json) 
+
+
+http://127.0.0.1:8000/api/v1/todo/filter/yyyy-mm-dd(from)/yyyy-mm-dd(to)/   ----- filter by date range  
+
+
+example: 
+
+http://127.0.0.1:8000/api/v1/todo/filter/2019-08-19/2019-08-21/
+
+out:
+
+[
+    {
+        "id": 1,
+        "body": "fix linux",
+        "date": "2019-08-20"
+    },
+    {
+        "id": 2,
+        "body": "make api",
+        "date": "2019-08-20"
+    }
+]
